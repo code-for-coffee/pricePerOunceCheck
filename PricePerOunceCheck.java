@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author James Traver
- * james [at] codeforcoffee [dot] org
+ * @author james [at] codeforcoffee [dot] org
  * github.com/code-for-coffee
  * 
  * This software is released under the GPL License.
