@@ -39,18 +39,38 @@ public class PricePerOunceCheck {
     }
     
     public static void main(String[] args) {
-        final int ARRAY_LENGTH  = 2;
-        double firstProduct[]   = new double[ARRAY_LENGTH];
-        double secondProduct[]  = new double[ARRAY_LENGTH];
+        
+        // define variables to be used in main()
+        final int ARRAY_LENGTH  = 4;
+        double productInput[]   = new double[ARRAY_LENGTH];
         String appName          = "PricePerOunceCheck";
         String appDescription   = "An app to find what is a better buy between price/Oz variations.";
         String appGuide[]       = { "Please enter the first product's price: ", 
                                     "Please enter the first product's weight: ",
                                     "Please enter the second product's price: ",
                                     "Please enter the second product's weight: " };
+        String appResults[]     = { "We've done the math! The better buy is the one that costs ",
+                                    "Thank you for using this app!" };
+        Scanner userInput       = new Scanner(System.in);
         
+        
+        // output to user & gather data
         System.out.println(appName + "\n" + appDescription);
         
+        // run a loop to gather this data
+        for (int i = 0; i < 4; i++) {
+            System.out.append(appGuide[i]);
+            productInput[i] = userInput.nextByte();
+        }      
+        
+        /* 
+         * this is included just for testing to make sure valid data was entered
+        
+        * for (double element : productInput) {
+            System.out.println(element);
+        }
+        * 
+        */
         
     }
 }
