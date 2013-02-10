@@ -36,9 +36,21 @@ public class PricePerOunceCheck {
         
         // return which product is the better buy
         return whichIsBetterProduct;
-        
     }
+    
     public static void main(String[] args) {
-        // gather user input here
+        final int ARRAY_LENGTH  = 2;
+        double firstProduct[]   = new double[ARRAY_LENGTH];
+        double secondProduct[]  = new double[ARRAY_LENGTH];
+        String appName          = "PricePerOunceCheck";
+        String appDescription   = "An app to find what is a better buy between price/Oz variations.";
+        String appGuide[]       = { "Please enter the first product's price: ", 
+                                    "Please enter the first product's weight: ",
+                                    "Please enter the second product's price: ",
+                                    "Please enter the second product's weight: " };
+        
+        System.out.println(appName + "\n" + appDescription);
+        
+        
     }
 }
