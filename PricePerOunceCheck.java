@@ -37,8 +37,9 @@ public class PricePerOunceCheck {
                                           "Second Product with a price of $ " };
         double firstProduct           = firstProductPrice / firstProductOunce;
         double secondProduct          = secondProductPrice / secondProductOunce;
+        String yourResult;
         
-        if (firstProduct > secondProduct) {
+        if (firstProduct < secondProduct) {
             return whichIsBetterProduct[0] + firstProductPrice;
         } else {
             return whichIsBetterProduct[1] + secondProductPrice;
@@ -59,7 +60,9 @@ public class PricePerOunceCheck {
                                     "Please enter the second product's weight: " };
         String appResults[]     = { "We've done the math! The better buy is the one that costs ",
                                     "Thank you for using this app!" };
+        String yourResult;
         Scanner userInput       = new Scanner(System.in);
+        
         
         
         // output to user & gather data
@@ -79,7 +82,6 @@ public class PricePerOunceCheck {
            */
         }    
         
-              
         /* 
          * this is included just for testing to make sure valid data was entered
         
@@ -89,5 +91,9 @@ public class PricePerOunceCheck {
         * 
         */
         
+        // now, let's actually run the calculation and give the user their result
+        yourResult = RatioCalculate(productData[0], productData[1], productData[2], productData[3]);
+        System.out.print(appResults[0] + "\n" + appResults[1]);
+        System.out.println(yourResult);        
     }
 }
