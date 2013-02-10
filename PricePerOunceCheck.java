@@ -63,8 +63,6 @@ public class PricePerOunceCheck {
         String yourResult;
         Scanner userInput       = new Scanner(System.in);
         
-        
-        
         // output to user & gather data
         System.out.println(appName + "\n" + appDescription);
         
